@@ -7,7 +7,7 @@ from .models import Payment
 class PaymentTests(APITestCase):
     def test_payment_initialization(self):
         data = {"name": "John Doe", "email": "john@example.com", "amount": "5000"}
-        response = self.client.post("/pay/", data)
+        response = self.client.post("/api/v1/payment", data)
         self.assertEqual(response.status_code, 200)
         self.assertIn("authorization_url", response.data)
 
