@@ -26,7 +26,7 @@ eggs/
 *.log
 # db.sqlite3
 /media/
-staticfiles/admin
+static/admin
 local_settings.py
 
 # Flask specific
