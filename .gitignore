@@ -1,0 +1,79 @@
+# Byte-compiled / cached files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.venv/
+env/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Django specific
+*.log
+# db.sqlite3
+/media/
+staticfiles/
+local_settings.py
+
+# Flask specific
+instance/
+.webassets-cache
+
+# Unit test / coverage reports
+.coverage
+.tox/
+.nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+htmlcov/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code / PyCharm IDE specific
+.vscode/
+.idea/
+*.sublime-workspace
+
+# mypy static type checker
+.mypy_cache/
+
+# PEP 582 (used by PyFlow)
+__pypackages__/
+
+# pytest cache
+.pytest_cache/
+
+# AWS, Azure, GCP credential files
+.aws/
+.azure/
+.gcloud/
+
+# Docker
+*.log
+docker-compose.override.yml
+.dockerignore
+
+# Security and environment files
+*.pem
+*.key
+*.crt
+*.env
+.env.*  # Ignore all environment files with extensions
+se
