@@ -21,6 +21,11 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
+    - name: Set Environment Variables
+      run: |
+        echo "PAYSTACK_SK=${{ secrets.PAYSTACK_SK }}" >> $GITHUB_ENV
+        echo "DEBUG=False" >> $GITHUB_ENV
+        echo "SECRET_KEY=${{ secrets.SECRET_KEY }}" >> $GITHUB_ENV
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
