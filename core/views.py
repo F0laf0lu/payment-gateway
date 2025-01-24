@@ -43,7 +43,7 @@ class PaymentView(APIView):
             "email": email,
             "amount": amount_in_kobo,
             "currency": "NGN",
-            "callback_url": "http://127.0.0.1:8000/payment/verify/",
+            "callback_url": "http://127.0.0.1:8000/api/v1/payment/verify",
         }
 
         try:
@@ -108,6 +108,7 @@ class VerifyTransactionView(APIView):
                         "status": "success",
                         "message": "Transaction verified successfully",
                         "data": {
+                            "id": payment.id,
                             "payment_status": payment.status,
                             "amount": payment.amount,
                             "currency":data["data"]["currency"],
